@@ -4,7 +4,7 @@ title:      "Linear Regression Model in Python:from scratch"
 subtitle:   "Linear Regression Model:Simple mathematical fun"
 date:       2018-07-05 14:23:00
 author:     "Gatij Jain"
-header-img: "img/post-LR-5-7-18.gif"
+header-img: "img/post-LR-26-7-18.gif"
 header-mask: 0.3
 catalog:    true
 tags:
