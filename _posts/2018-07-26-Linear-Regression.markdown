@@ -219,7 +219,7 @@ plt.legend()
 plt.show()
 ```
 
-![png](/img/in-post/post-Linear-Regression-test/simpleL_R_3_0.png)
+![png](/img/in-post/post-Linear-Regression/simpleL_R_3_0.png)
 
 This model is not so bad. But we need to find how good is our model. There are many methods to evaluate models. We will use **Root Mean Squared Error** and **Coefficient of Determination($$R^2$$ Score)**.
 
