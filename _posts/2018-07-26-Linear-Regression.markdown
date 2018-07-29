@@ -27,7 +27,7 @@ We discussed that Linear Regression is a simple model. Simple Linear Regression 
 
 In this problem we have an input variable **- X** and one output variable **- Y**. And we want to build linear relationship between these variables. Here the input variable is called **Independent Variable** and the output variable is called **Dependent Variable**. We can define this linear relationship as follows:
 
-$$Y = \beta_0 + \beta_1X$$
+  $$Y = \beta_0 + \beta_1X$$
  
 The β1 is called a scale factor or **coefficient** and β0 is called **bias coefficient**. The bias coeffient gives an extra degree of freedom to this model. This equation is similar to the line equation y=mx+b with m=β1(Slope) and b=β0(Intercept). So in this Simple Linear Regression model we want to draw a line between X and Y which estimates the relationship between X and Y.
 
@@ -45,17 +45,17 @@ And you can see a line in the image. That’s what we are going to accomplish. A
 
 And total error of this model is the sum of all errors of each point. ie.
 
-$$E = \sum_{i=1}^{m} e_i^2$$
+  $$E = \sum_{i=1}^{m} e_i^2$$
 
-$$e_i$$ -Distance between line and i<sup>th</sup> point.
+  $$e_i$$ -Distance between line and i<sup>th</sup> point.
 
-$$m$$ - Total number of points
+  $$m$$ - Total number of points
 
 You might have noticed that we are squaring each of the distances. This is because, some points will be above the line and some points will be below the line. We can minimize the error in the model by minimizing E. And after the mathematics of minimizing E, we will get:
 
-$$\beta_1 = \frac{\sum_{i=1}^{m} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{m} (x_i - \bar{x})^2} $$
+  $$\beta_1 = \frac{\sum_{i=1}^{m} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{m} (x_i - \bar{x})^2} $$
 
-$$\beta_0 = \bar{y} - \beta_1\bar{x}$$
+  $$\beta_0 = \bar{y} - \beta_1\bar{x}$$
 
 In these equations $$\bar{x}$$ is the mean value of input variable **X** and $$\bar{y}$$ is the mean value of output variable **Y**.
 

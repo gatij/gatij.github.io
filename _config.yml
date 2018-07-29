@@ -2,8 +2,8 @@
 
 title: Gatij Blog
 
-SEOTitle: Gatij Blog | Hux Blog
-header-img: img/home-bg.jpg
+SEOTitle: Gatij Blog | Learn in Space and Time
+header-img: img/home-bg-spirit.jpg
 email: gatijjain@gmail.com
 
 description: "DS & Algo Lover ，Django Developer，Software Engineer，ML Enthusiast "
@@ -117,8 +117,8 @@ ga_domain: gatijjain.me
 sidebar: true                           
 # whether or not using Sidebar.
 
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux-ny.jpg      
+sidebar-about-description: "Algorithimist，Python Developer<br>Data Scientist<br>Poet and Public Speaker"
+sidebar-avatar: /img/avatar-gatijw-ny.jpeg        
 # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
