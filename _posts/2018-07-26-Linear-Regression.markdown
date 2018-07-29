@@ -15,7 +15,6 @@ tags:
 ---
 
 
-
 **Linear Regression** is one of the easiest algorithms in machine learning. In this post we will explore this algorithm and we will implement it using Python from scratch.
 
 As the name suggests this algorithm is applicable for Regression problems. Linear Regression is a **Linear Model**. Which means, we will establish a linear relationship between the input variables**(X)** and single output variable**(Y)**. When the input**(X)** is a single variable this model is called **Simple Linear Regression** and when there are mutiple input variables**(X)**, it is called **Multiple Linear Regression.**
@@ -219,7 +218,7 @@ plt.legend()
 plt.show()
 ```
 
-![png](/img/in-post/post-Linear-Regression/simpleL_R_3_0.png)
+![png](/img/in-post/post-Linear-Regression-test/simpleL_R_3_0.png)
 
 This model is not so bad. But we need to find how good is our model. There are many methods to evaluate models. We will use **Root Mean Squared Error** and **Coefficient of Determination($$R^2$$ Score)**.
 
@@ -312,5 +311,83 @@ print(r2_score)
 
 You can see that this exactly equal to model we built from scratch, but simpler and less code.
 
+Let we move on to Multiple Linear Regression
 
 
+## **Multiple Linear Regression**
+
+Multiple Linear Regression is a type of Linear Regression when the input has multiple features(variables).
+
+## Model Representation
+
+Similar to Simple Linear Regression, we have input variable(**X**) and output variable(**Y**). But the input variable has **n** features. Therefore, we can represent this linear model as follows;
+
+$$Y = \beta_0 + \beta_1x_1 + \beta_1x_2 + … + \beta_nx_n$$
+
+$$x_i$$ is the i<sup>th</sup> feature in input variable. By introducing $$x_0$$=1, we can rewrite this equation.
+
+$$Y = \beta_0x_0 + \beta_1x_1 + \beta_1x_2 + … + \beta_nx_n$$
+
+$$x_0 = 1$$
+
+Now we can convert this eqaution to matrix form.
+
+$$Y = \beta^TX$$
+
+Where,
+
+$$\beta = \begin{bmatrix}\beta_0 & \beta_1 & \beta_2 & .. & \beta_n\end{bmatrix}^T$$
+
+and
+
+$$X = \begin{bmatrix}x_0 & x_1 & x_2 & .. & x_n\end{bmatrix}^T$$
+
+We have to define the cost of the model. Cost bascially gives the error in our model. Y in above equation is the our hypothesis(approximation). We are going to define it as our hypothesis function.
+
+$$h_\beta(x) = \beta^Tx$$
+
+And the cost is,
+
+$$J(\beta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\beta(x^{\textrm{(i)}}) - y^{\textrm{(i)}})^2$$
+
+By minimizing this cost function, we can get find β. We use **Gradient Descent** for this.
+
+## Gradient Descent
+
+Gradient Descent is an optimization algorithm. We will optimize our cost function using Gradient Descent Algorithm.
+
+### Step 1
+
+Initialize values $$β_0$$, $$β_1$$,…, $$β_n$$ with some value. In this case we will initialize with 0.
+
+### Step 2
+
+Iteratively update,
+
+$$\beta_j := \beta_j - \alpha\frac{\partial}{\partial \beta_j} J(\beta)$$
+
+until it converges.
+
+This is the procedure. Here $$α$$ is the learning rate. This operation $$\frac{\partial}{\partial \beta_j} J(\beta)$$ means we are finding partial derivate of cost with respect to each $$β_j$$. This is called Gradient.
+
+Read [this](https://math.stackexchange.com/questions/174270/what-exactly-is-the-difference-between-a-derivative-and-a-total-derivative) if you are unfamiliar with partial derivatives.
+
+In step 2 we are changing the values of $$β_j$$ in a direction in which it reduces our cost function. And Gradient gives the direction in which we want to move. Finally we will reach the minima of our cost function. But we don’t want to change values of $$β_j$$ drastically, because we might miss the minima. That’s why we need learning rate.
+
+![](http://www.xpertup.com/wp-content/uploads/2018/05/1-1.gif)
+
+The above animation illustrates the Gradient Descent method.
+
+But we still didn’t find the value of $$\frac{\partial}{\partial \beta_j} J(\beta)$$. After we applying the mathematics. The step 2 becomes.
+
+$$\beta_j := \beta_j - \alpha\frac{1}{m}\sum_{i=1}^m (h_\beta(x^{(i)})-y^{(i)})x_{j}^{(i)}$$
+
+We iteratively change values of $$β_j$$ according to above equation. This particular method is called **Batch Gradient Descent**.
+
+## Implementation
+
+Let’s try to implement this in Python. This looks like a long procedure. But the implementation is comparitively easy since we will vectorize all the equations. If you are unfamiliar with vectorization, read this [post](https://www.datascience.com/blog/straightening-loops-how-to-vectorize-data-aggregation-with-pandas-and-numpy/)
+
+<div>
+  <script src="https://gist.github.com/gatij/e3e36c64a7f6c9dec0b4a70f464b4ac6.js"></script>
+</div>
