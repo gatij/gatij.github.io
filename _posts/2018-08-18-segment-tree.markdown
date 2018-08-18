@@ -4,7 +4,7 @@ title:      "Segment Tree : A mysterious weapon of Comptetive Programmers"
 subtitle:   "Advacnce Data Structure:Simple C++ Implementation"
 date:       2018-08-18 12:40:00
 author:     "Gatij Jain"
-header-img: "img/post-ST-14-8-18.jpg"
+header-img: "img/post-ST-18-8-18.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
