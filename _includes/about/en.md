@@ -33,7 +33,7 @@ I fill soduko on daily basis. Beside that I spent my time by reading about new t
 
 #### Resume and Profiles
 
-- You can download my resume [here.] (https://drive.google.com/open?id=1NOLj5hcGkwjtZYZf6qKYgW9ivieSci67).
+- You can download my resume [here.](https://drive.google.com/open?id=1NOLj5hcGkwjtZYZf6qKYgW9ivieSci67).
 - Check my [LinkedIn profile.](https://www.linkedin.com/in/gatij-jain/)
 - Projects I have done are [here.](https://github.com/gatij)
 
