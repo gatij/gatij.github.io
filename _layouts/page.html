@@ -59,6 +59,16 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+                <!-- Friends Blog -->
+                {% if site.mentors %}
+                <hr>
+                <h5>MENTORS</h5>
+                <ul class="list-inline">
+                    {% for mentor in site.mentors %}
+                        <li><a href="{{mentor.href}}">{{mentor.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
         {% else %}
 

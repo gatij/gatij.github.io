@@ -159,3 +159,32 @@ friends: [
         href: "https://www.linkedin.com/in/gaganjain232/"
     }
 ]
+
+#Mentors
+mentors: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+        title: "Dr Anupam Shukla",
+        href: "https://www.linkedin.com/in/anupam-shukla-4a11a628/"
+    },{
+        title: "Dr Ritu Tiwari",
+        href: "https://www.linkedin.com/in/ritu-tiwari-71838714/"
+    },{
+        title: "Dr Prasenjit Chanak",
+        href: "https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.PrasenjitChanak"
+    },
+    {
+        title: "Dr Joydip Dhar",
+        href: "https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.JoydeepDhar"
+    },
+    {
+        title: "Pallavi Khandelwal",
+        href: "https://www.linkedin.com/in/pallavi8/"
+    }
+    {
+        title: "Ashish Kenjale",
+        href: "https://www.linkedin.com/in/ashishkenjale/"
+    }
+]
